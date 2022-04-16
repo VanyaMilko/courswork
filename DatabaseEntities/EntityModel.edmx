@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="EntityModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="EntityModelStoreContainer">
+    <EntitySet Name="RateSet" EntityType="EntityModel.Store.RateSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AdminSet" EntityType="EntityModel.Store.AdminSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ClientSet" EntityType="EntityModel.Store.ClientSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ExpertSet" EntityType="EntityModel.Store.ExpertSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MarketSet" EntityType="EntityModel.Store.MarketSet" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="ExpertRate" Association="EntityModel.Store.ExpertRate">
+      <End Role="Expert" EntitySet="ExpertSet" />
+      <End Role="Rate" EntitySet="RateSet" />
+    </AssociationSet>
+    <AssociationSet Name="RateMarket" Association="EntityModel.Store.RateMarket">
+      <End Role="Rate" EntitySet="RateSet" />
+      <End Role="Market" EntitySet="MarketSet" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="RateSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Value" Type="float" Nullable="false" />
+    <Property Name="TimeOfCommit" Type="datetime" Nullable="false" />
+    <Property Name="Expert_Id" Type="int" Nullable="false" />
+    <Property Name="Market_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AdminSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Login" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Password" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="UserStatus" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ClientSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Login" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Password" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="UserStatus" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ExpertSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="RateWeight" Type="float" Nullable="false" />
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Password" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Login" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="UserStatus" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MarketSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="TotalRate" Type="float" Nullable="false" />
+    <Property Name="Country" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="DemandLevel" Type="float" Nullable="false" />
+    <Property Name="CompetitionLevel" Type="float" Nullable="false" />
+    <Property Name="Trade" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="ExpertRate">
+    <End Role="Expert" Type="EntityModel.Store.ExpertSet" Multiplicity="1" />
+    <End Role="Rate" Type="EntityModel.Store.RateSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Expert">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Rate">
+        <PropertyRef Name="Expert_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RateMarket">
+    <End Role="Rate" Type="EntityModel.Store.RateSet" Multiplicity="*" />
+    <End Role="Market" Type="EntityModel.Store.MarketSet" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Market">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Rate">
+        <PropertyRef Name="Market_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="EntityModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+        <EntityContainer Name="EntityModelContainer1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="RateSet" EntityType="EntityModel.Rate" />
+          <AssociationSet Name="ExpertRate" Association="EntityModel.ExpertRate">
+            <End Role="Expert" EntitySet="ExpertSet" />
+            <End Role="Rate" EntitySet="RateSet" />
+          </AssociationSet>
+          <EntitySet Name="AdminSet" EntityType="EntityModel.Admin" />
+          <EntitySet Name="ClientSet" EntityType="EntityModel.Client" />
+          <EntitySet Name="ExpertSet" EntityType="EntityModel.Expert" />
+          <EntitySet Name="MarketSet" EntityType="EntityModel.Market" />
+          <AssociationSet Name="RateMarket" Association="EntityModel.RateMarket">
+            <End Role="Rate" EntitySet="RateSet" />
+            <End Role="Market" EntitySet="MarketSet" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Admin">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Login" Type="String" Nullable="false" />
+          <Property Name="Password" Type="String" Nullable="false" />
+          <Property Name="UserStatus" Type="EntityModel.Status" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Client">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Login" Type="String" Nullable="false" />
+          <Property Name="Password" Type="String" Nullable="false" />
+          <Property Name="UserStatus" Type="EntityModel.Status" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Expert">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="RateWeight" Type="Double" Nullable="false" />
+          <NavigationProperty Name="Rate" Relationship="EntityModel.ExpertRate" FromRole="Expert" ToRole="Rate" />
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Password" Type="String" Nullable="false" />
+          <Property Name="Login" Type="String" Nullable="false" />
+          <Property Name="UserStatus" Type="EntityModel.Status" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Rate">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Value" Type="Double" Nullable="false" />
+          <NavigationProperty Name="Expert" Relationship="EntityModel.ExpertRate" FromRole="Rate" ToRole="Expert" />
+          <Property Name="TimeOfCommit" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="Market" Relationship="EntityModel.RateMarket" FromRole="Rate" ToRole="Market" />
+        </EntityType>
+        <Association Name="ExpertRate">
+          <End Type="EntityModel.Expert" Role="Expert" Multiplicity="1" />
+          <End Type="EntityModel.Rate" Role="Rate" Multiplicity="*" />
+        </Association>
+        <EnumType Name="Status">
+          <Member Name="Banned" />
+          <Member Name="NotBanned" />
+        </EnumType>
+        <EntityType Name="Market">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" />
+          <Property Name="TotalRate" Type="Double" Nullable="false" />
+          <Property Name="Country" Type="String" Nullable="false" />
+          <NavigationProperty Name="RateSet" Relationship="EntityModel.RateMarket" FromRole="Market" ToRole="Rate" />
+          <Property Name="DemandLevel" Type="Double" Nullable="false" />
+          <Property Name="CompetitionLevel" Type="Double" Nullable="false" />
+          <Property Name="Trade" Type="EntityModel.MarketTrade" Nullable="false" />
+        </EntityType>
+        <Association Name="RateMarket">
+          <End Type="EntityModel.Rate" Role="Rate" Multiplicity="*" />
+          <End Type="EntityModel.Market" Role="Market" Multiplicity="1" />
+        </Association>
+        <EnumType Name="MarketTrade">
+          <Member Name="Stability" />
+          <Member Name="Growth" />
+          <Member Name="DownTurn" />
+        </EnumType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EntityModelStoreContainer" CdmEntityContainer="EntityModelContainer1">
+    <EntitySetMapping Name="RateSet">
+      <EntityTypeMapping TypeName="IsTypeOf(EntityModel.Rate)">
+        <MappingFragment StoreEntitySet="RateSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="TimeOfCommit" ColumnName="TimeOfCommit" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AdminSet">
+      <EntityTypeMapping TypeName="IsTypeOf(EntityModel.Admin)">
+        <MappingFragment StoreEntitySet="AdminSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="UserStatus" ColumnName="UserStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClientSet">
+      <EntityTypeMapping TypeName="IsTypeOf(EntityModel.Client)">
+        <MappingFragment StoreEntitySet="ClientSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="UserStatus" ColumnName="UserStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ExpertSet">
+      <EntityTypeMapping TypeName="IsTypeOf(EntityModel.Expert)">
+        <MappingFragment StoreEntitySet="ExpertSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="RateWeight" ColumnName="RateWeight" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="UserStatus" ColumnName="UserStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MarketSet">
+      <EntityTypeMapping TypeName="IsTypeOf(EntityModel.Market)">
+        <MappingFragment StoreEntitySet="MarketSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="TotalRate" ColumnName="TotalRate" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="DemandLevel" ColumnName="DemandLevel" />
+          <ScalarProperty Name="CompetitionLevel" ColumnName="CompetitionLevel" />
+          <ScalarProperty Name="Trade" ColumnName="Trade" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="ExpertRate" TypeName="EntityModel.ExpertRate" StoreEntitySet="RateSet">
+      <EndProperty Name="Expert">
+        <ScalarProperty Name="Id" ColumnName="Expert_Id" />
+      </EndProperty>
+      <EndProperty Name="Rate">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="RateMarket" TypeName="EntityModel.RateMarket" StoreEntitySet="RateSet">
+      <EndProperty Name="Market">
+        <ScalarProperty Name="Id" ColumnName="Market_Id" />
+      </EndProperty>
+      <EndProperty Name="Rate">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Нет" />
+        <DesignerProperty Name="UseLegacyProvider" Value="False" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

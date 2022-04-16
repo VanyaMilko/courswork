@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EntityModelStoreContainer" CdmEntityContainer="EntityModelContainer1">
+    <EntitySetMapping Name="VehicleSet">
+      <EntityTypeMapping TypeName="IsTypeOf(EntityModel.Vehicle)">
+        <MappingFragment StoreEntitySet="VehicleSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Dealer" ColumnName="Dealer" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="Colour" ColumnName="Colour" />
+          <ScalarProperty Name="RegistrationNumber" ColumnName="RegistrationNumber" />
+          <ScalarProperty Name="TotalRate" ColumnName="TotalRate" />
+          <ScalarProperty Name="BinaryPhoto" ColumnName="BinaryPhoto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RateSet">
+      <EntityTypeMapping TypeName="IsTypeOf(EntityModel.Rate)">
+        <MappingFragment StoreEntitySet="RateSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="TimeOfCommit" ColumnName="TimeOfCommit" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AdminSet">
+      <EntityTypeMapping TypeName="IsTypeOf(EntityModel.Admin)">
+        <MappingFragment StoreEntitySet="AdminSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="UserStatus" ColumnName="UserStatus" />
+          <ScalarProperty Name="BinaryPhoto" ColumnName="BinaryPhoto" />
+          <ScalarProperty Name="LastOnline" ColumnName="LastOnline" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClientSet">
+      <EntityTypeMapping TypeName="IsTypeOf(EntityModel.Client)">
+        <MappingFragment StoreEntitySet="ClientSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="UserStatus" ColumnName="UserStatus" />
+          <ScalarProperty Name="BinaryPhoto" ColumnName="BinaryPhoto" />
+          <ScalarProperty Name="LastOnline" ColumnName="LastOnline" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ExpertSet">
+      <EntityTypeMapping TypeName="IsTypeOf(EntityModel.Expert)">
+        <MappingFragment StoreEntitySet="ExpertSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="RateWeight" ColumnName="RateWeight" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="UserStatus" ColumnName="UserStatus" />
+          <ScalarProperty Name="BinaryPhoto" ColumnName="BinaryPhoto" />
+          <ScalarProperty Name="LastOnline" ColumnName="LastOnline" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="ExpertRate" TypeName="EntityModel.ExpertRate" StoreEntitySet="RateSet">
+      <EndProperty Name="Expert">
+        <ScalarProperty Name="Id" ColumnName="Expert_Id" />
+      </EndProperty>
+      <EndProperty Name="Rate">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="VehicleRate" TypeName="EntityModel.VehicleRate" StoreEntitySet="VehicleRate">
+      <EndProperty Name="Vehicle">
+        <ScalarProperty Name="Id" ColumnName="Vehicle_Id" />
+      </EndProperty>
+      <EndProperty Name="Rate">
+        <ScalarProperty Name="Id" ColumnName="Rate_Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

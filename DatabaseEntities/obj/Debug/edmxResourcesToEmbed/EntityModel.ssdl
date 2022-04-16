@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EntityModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="EntityModelStoreContainer">
+    <EntitySet Name="RateSet" EntityType="EntityModel.Store.RateSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AdminSet" EntityType="EntityModel.Store.AdminSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ClientSet" EntityType="EntityModel.Store.ClientSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ExpertSet" EntityType="EntityModel.Store.ExpertSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MarketSet" EntityType="EntityModel.Store.MarketSet" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="ExpertRate" Association="EntityModel.Store.ExpertRate">
+      <End Role="Expert" EntitySet="ExpertSet" />
+      <End Role="Rate" EntitySet="RateSet" />
+    </AssociationSet>
+    <AssociationSet Name="RateMarket" Association="EntityModel.Store.RateMarket">
+      <End Role="Rate" EntitySet="RateSet" />
+      <End Role="Market" EntitySet="MarketSet" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="RateSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Value" Type="float" Nullable="false" />
+    <Property Name="TimeOfCommit" Type="datetime" Nullable="false" />
+    <Property Name="Expert_Id" Type="int" Nullable="false" />
+    <Property Name="Market_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AdminSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Login" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Password" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="UserStatus" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ClientSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Login" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Password" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="UserStatus" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ExpertSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="RateWeight" Type="float" Nullable="false" />
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Password" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Login" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="UserStatus" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MarketSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="TotalRate" Type="float" Nullable="false" />
+    <Property Name="Country" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="DemandLevel" Type="float" Nullable="false" />
+    <Property Name="CompetitionLevel" Type="float" Nullable="false" />
+    <Property Name="Trade" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="ExpertRate">
+    <End Role="Expert" Type="EntityModel.Store.ExpertSet" Multiplicity="1" />
+    <End Role="Rate" Type="EntityModel.Store.RateSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Expert">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Rate">
+        <PropertyRef Name="Expert_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RateMarket">
+    <End Role="Rate" Type="EntityModel.Store.RateSet" Multiplicity="*" />
+    <End Role="Market" Type="EntityModel.Store.MarketSet" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Market">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Rate">
+        <PropertyRef Name="Market_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

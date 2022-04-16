@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EntityModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="EntityModelStoreContainer">
+    <EntitySet Name="VehicleSet" EntityType="EntityModel.Store.VehicleSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="RateSet" EntityType="EntityModel.Store.RateSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AdminSet" EntityType="EntityModel.Store.AdminSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ClientSet" EntityType="EntityModel.Store.ClientSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ExpertSet" EntityType="EntityModel.Store.ExpertSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="VehicleRate" EntityType="EntityModel.Store.VehicleRate" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="ExpertRate" Association="EntityModel.Store.ExpertRate">
+      <End Role="Expert" EntitySet="ExpertSet" />
+      <End Role="Rate" EntitySet="RateSet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VehicleRate_Vehicle" Association="EntityModel.Store.FK_VehicleRate_Vehicle">
+      <End Role="Vehicle" EntitySet="VehicleSet" />
+      <End Role="VehicleRate" EntitySet="VehicleRate" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VehicleRate_Rate" Association="EntityModel.Store.FK_VehicleRate_Rate">
+      <End Role="Rate" EntitySet="RateSet" />
+      <End Role="VehicleRate" EntitySet="VehicleRate" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="VehicleSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Dealer" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Model" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Colour" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="RegistrationNumber" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="TotalRate" Type="float" Nullable="false" />
+    <Property Name="BinaryPhoto" Type="varbinary(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RateSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Value" Type="float" Nullable="false" />
+    <Property Name="TimeOfCommit" Type="datetime" Nullable="false" />
+    <Property Name="Expert_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AdminSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Login" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Password" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="UserStatus" Type="int" Nullable="false" />
+    <Property Name="BinaryPhoto" Type="varbinary(max)" Nullable="false" />
+    <Property Name="LastOnline" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ClientSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Login" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Password" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="UserStatus" Type="int" Nullable="false" />
+    <Property Name="BinaryPhoto" Type="varbinary(max)" Nullable="false" />
+    <Property Name="LastOnline" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ExpertSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="RateWeight" Type="float" Nullable="false" />
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Password" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Login" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="UserStatus" Type="int" Nullable="false" />
+    <Property Name="BinaryPhoto" Type="varbinary(max)" Nullable="false" />
+    <Property Name="LastOnline" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VehicleRate">
+    <Key>
+      <PropertyRef Name="Vehicle_Id" />
+      <PropertyRef Name="Rate_Id" />
+    </Key>
+    <Property Name="Vehicle_Id" Type="int" Nullable="false" />
+    <Property Name="Rate_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="ExpertRate">
+    <End Role="Expert" Type="EntityModel.Store.ExpertSet" Multiplicity="1" />
+    <End Role="Rate" Type="EntityModel.Store.RateSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Expert">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Rate">
+        <PropertyRef Name="Expert_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VehicleRate_Vehicle">
+    <End Role="Vehicle" Type="EntityModel.Store.VehicleSet" Multiplicity="1" />
+    <End Role="VehicleRate" Type="EntityModel.Store.VehicleRate" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vehicle">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="VehicleRate">
+        <PropertyRef Name="Vehicle_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VehicleRate_Rate">
+    <End Role="VehicleRate" Type="EntityModel.Store.VehicleRate" Multiplicity="*" />
+    <End Role="Rate" Type="EntityModel.Store.RateSet" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Rate">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="VehicleRate">
+        <PropertyRef Name="Rate_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

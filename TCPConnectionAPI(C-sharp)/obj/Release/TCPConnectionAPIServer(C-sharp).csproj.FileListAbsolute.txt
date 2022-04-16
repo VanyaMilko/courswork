@@ -1,0 +1,17 @@
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPI(C-sharp)\bin\Release\TCPConnectionAPI(C-sharp).exe.config
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPI(C-sharp)\bin\Release\TCPConnectionAPI(C-sharp).exe
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPI(C-sharp)\bin\Release\TCPConnectionAPI(C-sharp).pdb
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPI(C-sharp)\bin\Release\ClassLibraryForTCPConnectionAPI(C-sharp).dll
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPI(C-sharp)\bin\Release\DatabaseEntities.dll
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPI(C-sharp)\bin\Release\EntityFramework.dll
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPI(C-sharp)\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPI(C-sharp)\bin\Release\ClassLibraryForTCPConnectionAPI(C-sharp).pdb
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPI(C-sharp)\bin\Release\DatabaseEntities.pdb
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPI(C-sharp)\bin\Release\DatabaseEntities.dll.config
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPI(C-sharp)\bin\Release\EntityFramework.xml
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPI(C-sharp)\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPI(C-sharp)\obj\Release\TCPConnectionAPIServer(C-sharp).csproj.AssemblyReference.cache
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPI(C-sharp)\obj\Release\TCPConnectionAPIServer(C-sharp).csproj.CoreCompileInputs.cache
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPI(C-sharp)\obj\Release\TCPConnectionAPIServer(C-sharp).csproj.CopyComplete
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPI(C-sharp)\obj\Release\TCPConnectionAPI(C-sharp).exe
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPI(C-sharp)\obj\Release\TCPConnectionAPI(C-sharp).pdb

@@ -1,0 +1,51 @@
+C:\Users\Дмитрий\Source\Repos\EvgeniousCode\TCPConnectionAPI(C-sharp)\obj\Debug\TCPConnectionAPIServer(C-sharp).csproj.AssemblyReference.cache
+C:\Users\Дмитрий\Source\Repos\EvgeniousCode\TCPConnectionAPI(C-sharp)\obj\Debug\TCPConnectionAPIServer(C-sharp).csproj.CoreCompileInputs.cache
+C:\Users\Дмитрий\Source\Repos\EvgeniousCode\TCPConnectionAPI(C-sharp)\bin\Debug\TCPConnectionAPI(C-sharp).exe
+C:\Users\Дмитрий\Source\Repos\EvgeniousCode\TCPConnectionAPI(C-sharp)\bin\Debug\TCPConnectionAPI(C-sharp).pdb
+C:\Users\Дмитрий\Source\Repos\EvgeniousCode\TCPConnectionAPI(C-sharp)\bin\Debug\ClassLibraryForTCPConnectionAPI(C-sharp).dll
+C:\Users\Дмитрий\Source\Repos\EvgeniousCode\TCPConnectionAPI(C-sharp)\bin\Debug\ClassLibraryForTCPConnectionAPI(C-sharp).pdb
+C:\Users\Дмитрий\Source\Repos\EvgeniousCode\TCPConnectionAPI(C-sharp)\obj\Debug\TCPConnectionAPIServer(C-sharp).csproj.CopyComplete
+C:\Users\Дмитрий\Source\Repos\EvgeniousCode\TCPConnectionAPI(C-sharp)\obj\Debug\TCPConnectionAPI(C-sharp).exe
+C:\Users\Дмитрий\Source\Repos\EvgeniousCode\TCPConnectionAPI(C-sharp)\obj\Debug\TCPConnectionAPI(C-sharp).pdb
+C:\Users\Дмитрий\Source\Repos\EvgeniousCode\TCPConnectionAPI(C-sharp)\bin\Debug\TCPConnectionAPI(C-sharp).exe.config
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPI(C-sharp)\obj\Debug\TCPConnectionAPIServer(C-sharp).csproj.AssemblyReference.cache
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPI(C-sharp)\obj\Debug\TCPConnectionAPIServer(C-sharp).csproj.CoreCompileInputs.cache
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPI(C-sharp)\obj\Debug\TCPConnectionAPI(C-sharp).exe
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPI(C-sharp)\obj\Debug\TCPConnectionAPI(C-sharp).pdb
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPI(C-sharp)\bin\Debug\TCPConnectionAPI(C-sharp).exe.config
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPI(C-sharp)\bin\Debug\TCPConnectionAPI(C-sharp).exe
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPI(C-sharp)\bin\Debug\TCPConnectionAPI(C-sharp).pdb
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPI(C-sharp)\bin\Debug\ClassLibraryForTCPConnectionAPI(C-sharp).dll
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPI(C-sharp)\bin\Debug\EntityFramework.dll
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPI(C-sharp)\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPI(C-sharp)\bin\Debug\ClassLibraryForTCPConnectionAPI(C-sharp).pdb
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPI(C-sharp)\bin\Debug\EntityFramework.xml
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPI(C-sharp)\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPI(C-sharp)\obj\Debug\TCPConnectionAPIServer(C-sharp).csproj.CopyComplete
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPI(C-sharp)\bin\Debug\DatabaseEntities.dll
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPI(C-sharp)\bin\Debug\DatabaseEntities.pdb
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPI(C-sharp)\bin\Debug\DatabaseEntities.dll.config
+C:\Users\Дмитрий\Source\Repos\EvgeniousCode\TCPConnectionAPI(C-sharp)\bin\Debug\DatabaseEntities.dll
+C:\Users\Дмитрий\Source\Repos\EvgeniousCode\TCPConnectionAPI(C-sharp)\bin\Debug\EntityFramework.dll
+C:\Users\Дмитрий\Source\Repos\EvgeniousCode\TCPConnectionAPI(C-sharp)\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Дмитрий\Source\Repos\EvgeniousCode\TCPConnectionAPI(C-sharp)\bin\Debug\DatabaseEntities.pdb
+C:\Users\Дмитрий\Source\Repos\EvgeniousCode\TCPConnectionAPI(C-sharp)\bin\Debug\DatabaseEntities.dll.config
+C:\Users\Дмитрий\Source\Repos\EvgeniousCode\TCPConnectionAPI(C-sharp)\bin\Debug\EntityFramework.xml
+C:\Users\Дмитрий\Source\Repos\EvgeniousCode\TCPConnectionAPI(C-sharp)\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Дмитрий\source\repos\Метод взвешенных оценок (на примере автомобильного завода)\TCPConnectionAPI(C-sharp)\bin\Debug\TCPConnectionAPI(C-sharp).exe.config
+C:\Users\Дмитрий\source\repos\Метод взвешенных оценок (на примере автомобильного завода)\TCPConnectionAPI(C-sharp)\bin\Debug\TCPConnectionAPI(C-sharp).exe
+C:\Users\Дмитрий\source\repos\Метод взвешенных оценок (на примере автомобильного завода)\TCPConnectionAPI(C-sharp)\bin\Debug\TCPConnectionAPI(C-sharp).pdb
+C:\Users\Дмитрий\source\repos\Метод взвешенных оценок (на примере автомобильного завода)\TCPConnectionAPI(C-sharp)\bin\Debug\ClassLibraryForTCPConnectionAPI(C-sharp).dll
+C:\Users\Дмитрий\source\repos\Метод взвешенных оценок (на примере автомобильного завода)\TCPConnectionAPI(C-sharp)\bin\Debug\DatabaseEntities.dll
+C:\Users\Дмитрий\source\repos\Метод взвешенных оценок (на примере автомобильного завода)\TCPConnectionAPI(C-sharp)\bin\Debug\EntityFramework.dll
+C:\Users\Дмитрий\source\repos\Метод взвешенных оценок (на примере автомобильного завода)\TCPConnectionAPI(C-sharp)\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Дмитрий\source\repos\Метод взвешенных оценок (на примере автомобильного завода)\TCPConnectionAPI(C-sharp)\bin\Debug\ClassLibraryForTCPConnectionAPI(C-sharp).pdb
+C:\Users\Дмитрий\source\repos\Метод взвешенных оценок (на примере автомобильного завода)\TCPConnectionAPI(C-sharp)\bin\Debug\DatabaseEntities.pdb
+C:\Users\Дмитрий\source\repos\Метод взвешенных оценок (на примере автомобильного завода)\TCPConnectionAPI(C-sharp)\bin\Debug\DatabaseEntities.dll.config
+C:\Users\Дмитрий\source\repos\Метод взвешенных оценок (на примере автомобильного завода)\TCPConnectionAPI(C-sharp)\bin\Debug\EntityFramework.xml
+C:\Users\Дмитрий\source\repos\Метод взвешенных оценок (на примере автомобильного завода)\TCPConnectionAPI(C-sharp)\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Дмитрий\source\repos\Метод взвешенных оценок (на примере автомобильного завода)\TCPConnectionAPI(C-sharp)\obj\Debug\TCPConnectionAPIServer(C-sharp).csproj.AssemblyReference.cache
+C:\Users\Дмитрий\source\repos\Метод взвешенных оценок (на примере автомобильного завода)\TCPConnectionAPI(C-sharp)\obj\Debug\TCPConnectionAPIServer(C-sharp).csproj.CoreCompileInputs.cache
+C:\Users\Дмитрий\source\repos\Метод взвешенных оценок (на примере автомобильного завода)\TCPConnectionAPI(C-sharp)\obj\Debug\TCPConnectionAPIServer(C-sharp).csproj.CopyComplete
+C:\Users\Дмитрий\source\repos\Метод взвешенных оценок (на примере автомобильного завода)\TCPConnectionAPI(C-sharp)\obj\Debug\TCPConnectionAPI(C-sharp).exe
+C:\Users\Дмитрий\source\repos\Метод взвешенных оценок (на примере автомобильного завода)\TCPConnectionAPI(C-sharp)\obj\Debug\TCPConnectionAPI(C-sharp).pdb

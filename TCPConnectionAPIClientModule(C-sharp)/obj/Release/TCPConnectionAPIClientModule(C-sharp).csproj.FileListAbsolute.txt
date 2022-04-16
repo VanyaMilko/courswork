@@ -1,0 +1,17 @@
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPIClientModule(C-sharp)\bin\Release\TCPConnectionAPIClientModule(C-sharp).dll.config
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPIClientModule(C-sharp)\bin\Release\TCPConnectionAPIClientModule(C-sharp).dll
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPIClientModule(C-sharp)\bin\Release\TCPConnectionAPIClientModule(C-sharp).pdb
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPIClientModule(C-sharp)\bin\Release\ClassLibraryForTCPConnectionAPI(C-sharp).dll
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPIClientModule(C-sharp)\bin\Release\DatabaseEntities.dll
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPIClientModule(C-sharp)\bin\Release\EntityFramework.dll
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPIClientModule(C-sharp)\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPIClientModule(C-sharp)\bin\Release\ClassLibraryForTCPConnectionAPI(C-sharp).pdb
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPIClientModule(C-sharp)\bin\Release\DatabaseEntities.pdb
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPIClientModule(C-sharp)\bin\Release\DatabaseEntities.dll.config
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPIClientModule(C-sharp)\bin\Release\EntityFramework.xml
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPIClientModule(C-sharp)\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPIClientModule(C-sharp)\obj\Release\TCPConnectionAPIClientModule(C-sharp).csproj.AssemblyReference.cache
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPIClientModule(C-sharp)\obj\Release\TCPConnectionAPIClientModule(C-sharp).csproj.CoreCompileInputs.cache
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPIClientModule(C-sharp)\obj\Release\TCPConnectionAPIClientModule(C-sharp).csproj.CopyComplete
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPIClientModule(C-sharp)\obj\Release\TCPConnectionAPIClientModule(C-sharp).dll
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPIClientModule(C-sharp)\obj\Release\TCPConnectionAPIClientModule(C-sharp).pdb

@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="EntityModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="EntityModelContainer1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="RateSet" EntityType="EntityModel.Rate" />
+    <AssociationSet Name="ExpertRate" Association="EntityModel.ExpertRate">
+      <End Role="Expert" EntitySet="ExpertSet" />
+      <End Role="Rate" EntitySet="RateSet" />
+    </AssociationSet>
+    <EntitySet Name="AdminSet" EntityType="EntityModel.Admin" />
+    <EntitySet Name="ClientSet" EntityType="EntityModel.Client" />
+    <EntitySet Name="ExpertSet" EntityType="EntityModel.Expert" />
+    <EntitySet Name="MarketSet" EntityType="EntityModel.Market" />
+    <AssociationSet Name="RateMarket" Association="EntityModel.RateMarket">
+      <End Role="Rate" EntitySet="RateSet" />
+      <End Role="Market" EntitySet="MarketSet" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Admin">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Login" Type="String" Nullable="false" />
+    <Property Name="Password" Type="String" Nullable="false" />
+    <Property Name="UserStatus" Type="EntityModel.Status" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Client">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Login" Type="String" Nullable="false" />
+    <Property Name="Password" Type="String" Nullable="false" />
+    <Property Name="UserStatus" Type="EntityModel.Status" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Expert">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="RateWeight" Type="Double" Nullable="false" />
+    <NavigationProperty Name="Rate" Relationship="EntityModel.ExpertRate" FromRole="Expert" ToRole="Rate" />
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Password" Type="String" Nullable="false" />
+    <Property Name="Login" Type="String" Nullable="false" />
+    <Property Name="UserStatus" Type="EntityModel.Status" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Rate">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Value" Type="Double" Nullable="false" />
+    <NavigationProperty Name="Expert" Relationship="EntityModel.ExpertRate" FromRole="Rate" ToRole="Expert" />
+    <Property Name="TimeOfCommit" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Market" Relationship="EntityModel.RateMarket" FromRole="Rate" ToRole="Market" />
+  </EntityType>
+  <Association Name="ExpertRate">
+    <End Type="EntityModel.Expert" Role="Expert" Multiplicity="1" />
+    <End Type="EntityModel.Rate" Role="Rate" Multiplicity="*" />
+  </Association>
+  <EnumType Name="Status">
+    <Member Name="Banned" />
+    <Member Name="NotBanned" />
+  </EnumType>
+  <EntityType Name="Market">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" />
+    <Property Name="TotalRate" Type="Double" Nullable="false" />
+    <Property Name="Country" Type="String" Nullable="false" />
+    <NavigationProperty Name="RateSet" Relationship="EntityModel.RateMarket" FromRole="Market" ToRole="Rate" />
+    <Property Name="DemandLevel" Type="Double" Nullable="false" />
+    <Property Name="CompetitionLevel" Type="Double" Nullable="false" />
+    <Property Name="Trade" Type="EntityModel.MarketTrade" Nullable="false" />
+  </EntityType>
+  <Association Name="RateMarket">
+    <End Type="EntityModel.Rate" Role="Rate" Multiplicity="*" />
+    <End Type="EntityModel.Market" Role="Market" Multiplicity="1" />
+  </Association>
+  <EnumType Name="MarketTrade">
+    <Member Name="Stability" />
+    <Member Name="Growth" />
+    <Member Name="DownTurn" />
+  </EnumType>
+</Schema>

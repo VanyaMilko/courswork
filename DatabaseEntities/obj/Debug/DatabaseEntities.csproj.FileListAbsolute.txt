@@ -1,0 +1,34 @@
+C:\Users\Дмитрий\source\repos\Курсовой проект\DatabaseEntities\obj\Debug\DatabaseEntities.csproj.CoreCompileInputs.cache
+C:\Users\Дмитрий\source\repos\Курсовой проект\DatabaseEntities\bin\Debug\DatabaseEntities.dll.config
+C:\Users\Дмитрий\source\repos\Курсовой проект\DatabaseEntities\bin\Debug\DatabaseEntities.dll
+C:\Users\Дмитрий\source\repos\Курсовой проект\DatabaseEntities\bin\Debug\DatabaseEntities.pdb
+C:\Users\Дмитрий\source\repos\Курсовой проект\DatabaseEntities\bin\Debug\EntityFramework.dll
+C:\Users\Дмитрий\source\repos\Курсовой проект\DatabaseEntities\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Дмитрий\source\repos\Курсовой проект\DatabaseEntities\bin\Debug\EntityFramework.xml
+C:\Users\Дмитрий\source\repos\Курсовой проект\DatabaseEntities\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Дмитрий\source\repos\Курсовой проект\DatabaseEntities\obj\Debug\DatabaseEntities.csproj.CopyComplete
+C:\Users\Дмитрий\source\repos\Курсовой проект\DatabaseEntities\obj\Debug\DatabaseEntities.dll
+C:\Users\Дмитрий\source\repos\Курсовой проект\DatabaseEntities\obj\Debug\DatabaseEntities.pdb
+C:\Users\Дмитрий\Source\Repos\EvgeniousCode\DatabaseEntities\bin\Debug\DatabaseEntities.dll.config
+C:\Users\Дмитрий\Source\Repos\EvgeniousCode\DatabaseEntities\bin\Debug\DatabaseEntities.dll
+C:\Users\Дмитрий\Source\Repos\EvgeniousCode\DatabaseEntities\bin\Debug\DatabaseEntities.pdb
+C:\Users\Дмитрий\Source\Repos\EvgeniousCode\DatabaseEntities\bin\Debug\EntityFramework.dll
+C:\Users\Дмитрий\Source\Repos\EvgeniousCode\DatabaseEntities\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Дмитрий\Source\Repos\EvgeniousCode\DatabaseEntities\bin\Debug\EntityFramework.xml
+C:\Users\Дмитрий\Source\Repos\EvgeniousCode\DatabaseEntities\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Дмитрий\Source\Repos\EvgeniousCode\DatabaseEntities\obj\Debug\DatabaseEntities.csproj.CoreCompileInputs.cache
+C:\Users\Дмитрий\Source\Repos\EvgeniousCode\DatabaseEntities\obj\Debug\DatabaseEntities.csproj.CopyComplete
+C:\Users\Дмитрий\Source\Repos\EvgeniousCode\DatabaseEntities\obj\Debug\DatabaseEntities.dll
+C:\Users\Дмитрий\Source\Repos\EvgeniousCode\DatabaseEntities\obj\Debug\DatabaseEntities.pdb
+C:\Users\Дмитрий\Source\Repos\EvgeniousCode\DatabaseEntities\obj\Debug\DatabaseEntities.csproj.AssemblyReference.cache
+C:\Users\Дмитрий\source\repos\Метод взвешенных оценок (на примере автомобильного завода)\DatabaseEntities\bin\Debug\DatabaseEntities.dll.config
+C:\Users\Дмитрий\source\repos\Метод взвешенных оценок (на примере автомобильного завода)\DatabaseEntities\bin\Debug\DatabaseEntities.dll
+C:\Users\Дмитрий\source\repos\Метод взвешенных оценок (на примере автомобильного завода)\DatabaseEntities\bin\Debug\DatabaseEntities.pdb
+C:\Users\Дмитрий\source\repos\Метод взвешенных оценок (на примере автомобильного завода)\DatabaseEntities\bin\Debug\EntityFramework.dll
+C:\Users\Дмитрий\source\repos\Метод взвешенных оценок (на примере автомобильного завода)\DatabaseEntities\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Дмитрий\source\repos\Метод взвешенных оценок (на примере автомобильного завода)\DatabaseEntities\bin\Debug\EntityFramework.xml
+C:\Users\Дмитрий\source\repos\Метод взвешенных оценок (на примере автомобильного завода)\DatabaseEntities\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Дмитрий\source\repos\Метод взвешенных оценок (на примере автомобильного завода)\DatabaseEntities\obj\Debug\DatabaseEntities.csproj.CoreCompileInputs.cache
+C:\Users\Дмитрий\source\repos\Метод взвешенных оценок (на примере автомобильного завода)\DatabaseEntities\obj\Debug\DatabaseEntities.csproj.CopyComplete
+C:\Users\Дмитрий\source\repos\Метод взвешенных оценок (на примере автомобильного завода)\DatabaseEntities\obj\Debug\DatabaseEntities.dll
+C:\Users\Дмитрий\source\repos\Метод взвешенных оценок (на примере автомобильного завода)\DatabaseEntities\obj\Debug\DatabaseEntities.pdb
